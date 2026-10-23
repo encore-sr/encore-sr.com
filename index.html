@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="encore-sr" />
+    <title>encore-sr</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        font-size: 100%;
+      }
+
+      body {
+        font-family: monospace;
+        background: #000;
+        color: #fff;
+        line-height: 1.5;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 2rem;
+      }
+
+      main {
+        text-align: left;
+        max-width: 800px;
+        width: 100%;
+      }
+
+      h1 {
+        font-size: clamp(3rem, 12vw, 8rem);
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        line-height: 0.95;
+        margin-bottom: 0.5rem;
+      }
+
+      .subtitle {
+        font-size: clamp(1rem, 3vw, 1.5rem);
+        color: #888;
+        font-weight: 400;
+        max-width: 50ch;
+        margin-bottom: 2rem;
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        border: 2px solid #fff;
+        padding: 0.75rem 1.5rem;
+        font-size: 0.875rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        transition: background 0.1s, color 0.1s;
+      }
+
+      a:hover {
+        background: #fff;
+        color: #000;
+      }
+
+      hr {
+        border: none;
+        border-top: 1px solid #333;
+        margin: 3rem 0;
+      }
+
+      footer {
+        font-size: 0.75rem;
+        color: #444;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+
+      @media (prefers-color-scheme: light) {
+        body {
+          background: #fff;
+          color: #000;
+        }
+
+        .subtitle {
+          color: #666;
+        }
+
+        a {
+          color: #000;
+          border-color: #000;
+        }
+
+        a:hover {
+          background: #000;
+          color: #fff;
+        }
+
+        hr {
+          border-top-color: #ccc;
+        }
+
+        footer {
+          color: #999;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Encore</h1>
+      <p class="subtitle">Coming soon.</p>
+      <div class="links"><a href="https://github.com/encore-sr" target="_blank" rel="noopener">GitHub</a><a href="mailto:aneeq.weerasinghe@encore-sr.com">Contact</a></div>
+      <hr />
+      <footer>© 2026 Encore. All rights reserved.</footer>
+    </main>
+  </body>
+</html>
