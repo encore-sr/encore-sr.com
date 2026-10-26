@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="encore-sr" />
-    <title>encore-sr</title>
+    <meta name="description" content="Encore SR — Made by humans." />
+    <link rel="icon" type="image/png" href="/encore.png" />
+    <title>Encore SR</title>
     <style>
       * {
         box-sizing: border-box;
@@ -31,14 +32,42 @@
         text-align: left;
         max-width: 800px;
         width: 100%;
+        position: relative;
+        padding-left: calc(clamp(3rem, 12vw, 8rem) * 1.15);
       }
 
       h1 {
         font-size: clamp(3rem, 12vw, 8rem);
         font-weight: 700;
         letter-spacing: -0.02em;
+        text-indent: -0.04em;
         line-height: 0.95;
         margin-bottom: 0.5rem;
+        position: static;
+      }
+
+      .logo {
+        position: absolute;
+        left: 0;
+        top: -0.025em;
+        height: 1em;
+        width: auto;
+        transform-origin: center;
+      }
+
+      .logo:hover {
+        animation: spin 2.4s ease-in-out infinite;
+        cursor: pointer;
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+
+        to {
+          transform: rotate(360deg);
+        }
       }
 
       .subtitle {
@@ -119,7 +148,7 @@
   </head>
   <body>
     <main>
-      <h1>Encore</h1>
+      <h1><img class="logo" src="/encore.png" alt="Encore STEM Racing team logo" />Encore</h1>
       <p class="subtitle">Made by humans.</p>
       <div class="links"><a href="https://instagram.com/encore_sr" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/company/encore_sr" target="_blank" rel="noopener">LinkedIn</a><a href="https://discord.gg/dj2phSdJxk" target="_blank" rel="noopener">Discord</a><a href="https://whatsapp.com/channel/0029VbBRYAE2P59kigjboH0n" target="_blank" rel="noopener">WhatsApp</a></div>
       <hr />
